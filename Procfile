@@ -1,0 +1,1 @@
+web: gunicorn mycrawl.wsgi —-log-file -
