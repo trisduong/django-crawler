@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lan='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv="='X-UA-Compatible" content="ie=edge">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="container-fluid">
+    	<div class='row'>
+    		<div class="col-sm-10">
+    			<center><h1>Crawler Website with API, BS4 and show with Django</h1></center>
+    			<center><h3>In development process</h3></center>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="bs-slidebar">
+    		    <ul class="nav flex-cloumn">
+    		    	<li><a href="/"><h3>Home</h3></a></li>
+    		    	<li><a href="/awesomejob"><h3>Awesome Job</h3></a></li>
+    		    	<li><a href="/familug"><h3>Familug Post</h3></a></li>
+    		    </ul>
+    			
+    		</div>
+    		<div class="col-sm-10"></div>
+    		    <div class="container-fluid">
+    		    	{% block content %}
+
+                    {% endblock %}
+    		    </div>
+    	</div>
+    	<footer>
+    		<div class="container-fluid">
+    			<a href="https://github.com/trisduong">Github</a>|<a href="https://linkedin.com/in/trisduong">Linkedin</a>
+    		</div>
+    	</footer>
+    </div>
+</body>
+</html>
