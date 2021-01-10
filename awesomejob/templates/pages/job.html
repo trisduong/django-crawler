@@ -1,3 +1,11 @@
-{% for instance in object_list %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awesome Job Viet nam</title>
+</head>
+<body>
+    {% for instance in object_list %}
     <p>{{ instance.id}} - <a href="{{ instance.get_absolute_url }}"> {{ instance.title}}</a></p>
-{% endfor %}
+    {% endfor %}
+</body>
+</html>
