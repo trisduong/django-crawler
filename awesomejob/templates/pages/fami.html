@@ -1,5 +1,11 @@
-{% for instance in object_list %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Familug</title>
+</head>
+<body>
+    {% for instance in object_list %}
     <p>{{ instance.id}} - <a href="{{ instance.link }}"> {{ instance.title}}</a></p>
-{% endfor %}    
-
-    
+    {% endfor %}
+</body>
+</html>
