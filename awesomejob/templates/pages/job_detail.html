@@ -1,11 +1,9 @@
+{% extends "pages/base.html" %}
 {% load markdown_extras %}
-<!DOCTYPE html>
-<html>
-<head>
-	<title>{{ object.title }}</title>
-</head>
-<body>
+
+{% block title%}{{ object.title }}{% endblock %}
+
+{% block content %}
     <center><h2>{{ object.title }}</h2></center> <br>
     <p>{{ object.detail | markdown | safe }}</p>
-</body>
-</html>
+{% endblock %}

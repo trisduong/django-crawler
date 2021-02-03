@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Awesome Job Viet nam</title>
-</head>
-<body>
-    {% for instance in object_list %}
-    <p>{{ instance.id}} - <a href="{{ instance.get_absolute_url }}"> {{ instance.title}}</a></p>
-    {% endfor %}
-</body>
-</html>
+{% extends "pages/base.html" %}
+
+{% block title%}Awesome Job{% endblock %}
+
+{% block content %}
+     <div class="list-group">
+     {% for instance in object_list %}
+        <a href="{{ instance.get_absolute_url }}" class="list-group-item"> {{ instance.title}}</a></p>
+     {% endfor %}
+    </div>
+{% endblock %}
